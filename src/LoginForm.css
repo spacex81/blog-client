@@ -1,0 +1,41 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid #4A90E2;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F0F4F8;
+    max-width: 400px;
+    margin: 20px auto;
+    /*I don't understand how shadow works*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+/*input element is longer than the label element so that the input element doesn't align in center*/
+.login-form input {
+    width: calc(100% - 16px); /* Adjust width considering padding */
+    padding: 8px;
+    margin: 6px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
