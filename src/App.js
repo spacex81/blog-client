@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
-  return (
+    function handleSubmit() {
+        console.log("button clicked!!!")
+    }
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fuck
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      please login
+        <form style={{
+            display: "flex", flexDirection: "column", alignItems: "center",
+            border: "1px solid black"
+        }}>
+                <label>
+                    email
+                    <input/>
+                </label>
+                <br/>
+                <label>
+                    password
+                    <input/>
+                </label>
+                <br/>
+                <button onClick={() => handleSubmit()}>Login</button>
+        </form>
     </div>
   );
 }
