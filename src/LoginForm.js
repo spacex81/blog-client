@@ -38,12 +38,12 @@ function LoginForm() {
         <form className="login-form">
             <label>
                 Email
-                <input type="email"/>
+                <input type="email" value={email} onChange={e => setEmail(e.target.value)}/>
             </label>
             <br/>
             <label>
                 Password
-                <input type="password"/>
+                <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
             </label>
             <br/>
             <button className="login-button" onClick={handleLogin}>
