@@ -6,9 +6,6 @@ import Signup from "./Signup"; // Import Routes and Route
 
 
 function App() {
-    function handleSubmit() {
-        console.log("button clicked!!!")
-    }
 
     return (
         <Router>
